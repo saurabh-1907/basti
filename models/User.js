@@ -7,4 +7,5 @@ const userSchema = new mongoose.Schema({
   role: { type: String, enum: ["volunteer", "intern", "admin"], default: "volunteer" },
 });
 
-module.exports = mongoose.model("User", userSchema);
+module.exports = mongoose.model("User", userSchema, "Users_BASTI");
+
